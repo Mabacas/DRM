@@ -1,0 +1,94 @@
+.wrapper {
+    display:flex;
+  }
+  /* Header Section*/
+  .dashboard-header{
+    color: white;
+    background: rgb(8, 105, 53);
+    padding: 15px;
+    text-align: center;
+  }
+.mywrapper{
+    float: left;
+    width: 100%;
+    background-color: #dddddd;
+    padding: 20px 10px;
+}
+.mywrapper .firstcontainer{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+.mywrapper .firstcontainer .left{
+    float: left;
+    width: 50%;
+    padding: 0px 10px;
+}
+/*.mywrapper .firstcontainer .left{
+    float: left;
+    width: 50%;
+    padding: 0px 10px;
+}*/
+.mywrapper .firstcontainer .left .notice-board{
+   padding: 10px 15px;
+   color: black;
+   text-align: left;
+   background-color: #f0f0f0;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   margin-bottom: 50px;
+}
+.notice-board-header h2{
+    text-align: center;
+    background: hsl(30, 23%, 95%);
+    border-radius: 10px;
+    border: 1px solid;
+  }
+.mywrapper .firstcontainer .left .student{
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+    margin-bottom: 30PX;
+ }
+ .mywrapper .firstcontainer .left .student .img1{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+ }
+
+ .mywrapper .firstcontainer .left .teacher{
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+ }
+ .mywrapper .firstcontainer .left .teacher .img2{
+    width: 40px;
+    height: 50px;
+    margin-right: 20px;
+ }
+.mywrapper .firstcontainer .right{
+    float: left;
+    width: 50%;
+    padding: 0px 10px;
+}
+/*.mywrapper .firstcontainer .right{
+    float: left;
+    width: 50%;
+    padding: 0px 10px;
+}*/
+
+.mywrapper .firstcontainer .right .calendar{
+    /*padding: 20px 15px;*/
+    width: 100%;
+    color: black;
+    background:hsl(0, 16%, 91%);
+    
+}

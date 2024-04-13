@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="calendar.css">
+    <script src="calendar.js" defer></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <title>Document</title>
+</head>
+<body>
+  <div class="dashboard-header">
+    <h3>Department of Computer Study</h3>
+    <p>Cavite State University CCAT-Campus</p>
+  </div>
+  <div class="wrapper">
+
+    <!--Section for side bar-->
+    <nav class="sidebar">
+
+        <div class="nav-header">
+          <p class="logo">DRM LOGO</p>
+          <i class="bx bx-menu-alt-right btn-menu"></i>
+        </div>
+  
+        <ul class="nav-links">
+          <li>
+            <a href="#">
+              <i class='bx bxs-dashboard'></i>
+              <span class="title">Dashboard</span>
+            </a>
+            <span class="tooltip">Dashboard</span>
+          </li>
+          <li>
+            <a href="2.html">
+              <i class='bx bx-user'></i>
+              <span class="title">Student Profile</span>
+            </a>
+            <span class="tooltip">Student Profile</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bxs-megaphone'></i>
+              <span class="title">Announcement</span>
+            </a>
+            <span class="tooltip">Announcement</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-calendar'></i>
+              <span class="title">Event and Activity</span>
+            </a>
+            <span class="tooltip">Event and Activity</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-chart'></i>
+              <span class="title">Performance analysis</span>
+            </a>
+            <span class="tooltip">Performance analysis</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-shield'></i>
+              <span class="title">Account Security</span>
+            </a>
+            <span class="tooltip">Account Security</span>
+          </li>
+          <hr>
+          <li>
+            <a href="#">
+              <i class='bx bx-log-out-circle' style="align-items:end;"></i>
+              <span class="title">Log Out</span>
+            </a>
+            <span class="tooltip">Log Out</span>
+          </li>
+        </ul>
+    </nav>
+
+    <!--Section for dashboard -->
+    <section class="mywrapper">
+        <div class="firstcontainer">
+            <div class="left">
+                <div class="notice-board-header">
+                    <h2>Notice Board</h2>
+                </div>
+                <div class="notice-board">
+                    <ul>
+                        <li>Renato Bautista</li>
+                        <li>Renato</li>
+                        <li>Renato</li>
+                        <li>Renato</li>
+                        <li>Renato</li>
+                        <li>Renato</li>
+                        <li>Renato</li>
+                        <li>Renato</li>
+                      </ul>
+                </div>
+                <div class="student">
+                  <img class="img1" src="student.png" alt="pic">
+                  <span>Number of Students: 400</span>
+                </div>
+                <div class="teacher">
+                    <img class="img2" src="teacher.png" alt="pic">
+                    <span>number of Teachers: 6</span>
+                </div>
+            </div>
+            <div class="right">
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <span class="month-picker" id="month-picker"> May </span>
+                            <div class="year-picker" id="year-picker">
+                              <span class="year-change" id="pre-year">
+                                  <pre><</pre>
+                              </span>
+                                  <span id="year">2020 </span>
+                              <span class="year-change" id="next-year">
+                                  <pre>></pre>
+                              </span>
+                            </div>
+                    </div>
+      
+                      <div class="calendar-body">
+                            <div class="calendar-week-days">
+                              <div>Sun</div>
+                              <div>Mon</div>
+                              <div>Tue</div>
+                              <div>Wed</div>
+                              <div>Thu</div>
+                              <div>Fri</div>
+                              <div>Sat</div>
+                            </div>
+                          <div class="calendar-days"></div>
+                      </div>
+                      <div class="calendar-footer"></div>
+                        <div class="date-time-formate">
+                          <div class="day-text-formate">TODAY</div>
+                            <div class="date-time-value">
+                              <div class="time-formate">02:51:20</div>
+                              <div class="date-formate">23 - july - 2022</div>
+                            </div>
+                        </div>
+                      <div class="month-list"></div>
+                  </div>
+            </div>
+            
+        </div>
+    </section>
+  </div>
+  
+  <script>
+    const btn_menu = document.querySelector(".btn-menu");
+    const side_bar = document.querySelector(".sidebar");
+
+    btn_menu.addEventListener("click", function () {
+      side_bar.classList.toggle("expand");
+      changebtn();
+    });
+
+    function changebtn() {
+      if (side_bar.classList.contains("expand")) {
+        btn_menu.classList.replace("bx-menu", "bx-menu-alt-right");
+      } else {
+        btn_menu.classList.replace("bx-menu-alt-right", "bx-menu");
+      }
+    }
+
+  </script>
+</body>
+</html>
