@@ -15,7 +15,8 @@
   z-index: 100;
   width: 78px;
   height: 100%;
-  background: hsl(0, 16%, 91%);
+  background-color: #f0f0f0;
+  border: 0px solid #ccc;
   padding: 8px 16px;
   transition: var(--transition);
 }
