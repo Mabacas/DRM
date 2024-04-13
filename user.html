@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="user.css">
+    <script src="calendar.js" defer></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <title>Document</title>
+</head>
+<body>
+  <div class="dashboard-header">
+    <h3>Department of Computer Study</h3>
+    <p>Cavite State University CCAT-Campus</p>
+  </div>
+  <div class="wrapper">
+
+    <!--Section for side bar-->
+    <nav class="sidebar">
+
+        <div class="nav-header">
+          <p class="logo">DRM LOGO</p>
+          <i class="bx bx-menu-alt-right btn-menu"></i>
+        </div>
+  
+        <ul class="nav-links">
+          <li>
+            <a href="dashboard.html">
+              <i class='bx bxs-dashboard'></i>
+              <span class="title">Dashboard</span>
+            </a>
+            <span class="tooltip">Dashboard</span>
+          </li>
+          <li>
+            <a href="2.html">
+              <i class='bx bx-user'></i>
+              <span class="title">Student Profile</span>
+            </a>
+            <span class="tooltip">Student Profile</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bxs-megaphone'></i>
+              <span class="title">Announcement</span>
+            </a>
+            <span class="tooltip">Announcement</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-calendar'></i>
+              <span class="title">Event and Activity</span>
+            </a>
+            <span class="tooltip">Event and Activity</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-chart'></i>
+              <span class="title">Performance analysis</span>
+            </a>
+            <span class="tooltip">Performance analysis</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-shield'></i>
+              <span class="title">Account Security</span>
+            </a>
+            <span class="tooltip">Account Security</span>
+          </li>
+          <hr>
+          <li>
+            <a href="#">
+              <i class='bx bx-log-out-circle' style="align-items:end;"></i>
+              <span class="title">Log Out</span>
+            </a>
+            <span class="tooltip">Log Out</span>
+          </li>
+        </ul>
+    </nav>
+
+    <div class="user">
+        <div class="myprofile-header">My Profile</div>
+        <div class="text-center">
+            <h3>Christian Charles Mabacas</h3>
+            <p>Student</p>
+        </div>
+        <div class="text-center">
+            <p>Section: <strong>302A</strong></p>
+            <p>Course: <strong>Bachelor of Science in Information Technology</strong></p>
+        </div>
+    </div>
+    <div class="persoalinformation">
+        <div class="card-body">
+            <div class="card-title">Personal Information</div>
+            <hr>
+            <form>
+                <div class="info">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" class="form-control" placeholder="ex. Juan" disabled="" value="CHRISTIAN CHARLES">
+                </div>
+                <div class="info">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" class="form-control" placeholder="ex. Juan" disabled="" value="MABACAS">
+                </div>
+                <div class="gender">
+                    <div class="sex">Sex</div>
+                    <div class="sex-button">
+                        <input type="radio" class="custom-control-input" id="defaultInline2" name="sex" value="Female" disabled="">
+                        <label class="custom-control-label" for="defaultInline2">Female</label>
+                        <input type="radio" class="custom-control-input" id="defaultInline2" name="sex" value="Male" disabled="">
+                        <label class="custom-control-label" for="defaultInline2">Male</label>
+                    </div>
+                </div>
+                <div class="email-add">
+                    <label for="newEmail">Email Address</label>
+                          <input type="email" class="form-control" placeholder="you@email.com" name="newEmail" disabled="" value="christian.mabacas@cvsu.edu.ph" readonly="">
+                </div>
+            </form>
+        </div>
+    </div>
+  </div>
+  
+  <script>
+    const btn_menu = document.querySelector(".btn-menu");
+    const side_bar = document.querySelector(".sidebar");
+
+    btn_menu.addEventListener("click", function () {
+      side_bar.classList.toggle("expand");
+      changebtn();
+    });
+
+    function changebtn() {
+      if (side_bar.classList.contains("expand")) {
+        btn_menu.classList.replace("bx-menu", "bx-menu-alt-right");
+      } else {
+        btn_menu.classList.replace("bx-menu-alt-right", "bx-menu");
+      }
+    }
+
+  </script>
+</body>
+</html>
